@@ -49,7 +49,7 @@ export default function DetailGamePage() {
             </div>
 
             <div className="mt-5">
-                <h2 className="mb-3">Trophies</h2>
+                <h2 className="mb-3 fw-bold">Trophies</h2>
                 {!game.trophies || game.trophies.length === 0 ?
                     (
                         <div className="alert alert-warning">No trophies available for this game.</div>
