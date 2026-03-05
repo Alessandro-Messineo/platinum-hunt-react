@@ -48,7 +48,7 @@ export default function DetailGamePage() {
                 </div>
             </div>
 
-            <div className="mt-5">
+            <div className="mt-5 table-responsive">
                 <h2 className="mb-3 fw-bold">Trophies</h2>
                 {!game.trophies || game.trophies.length === 0 ?
                     (
