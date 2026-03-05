@@ -1,0 +1,14 @@
+.game-card {
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.game-card-img {
+    height: 330px;
+    object-fit: cover;
+}
+
+.game-card-link {
+    text-decoration: none;
+    color: inherit;
+}
