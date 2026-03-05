@@ -7,7 +7,7 @@ export default function GamePage() {
     const [games, setGames] = useState([]);
 
     function fectGames() {
-        axios.get(import.meta.env.VITE_API_URL)
+        axios.get(import.meta.env.VITE_API_URL + "/games")
             .then((res) => setGames(res.data))
             .catch(error => console.log(error))
     }

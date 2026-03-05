@@ -7,7 +7,7 @@ export default function GameCard({ game }) {
         <div className="card h-100 shadow game-card">
             <Link to={`/games/${game.id}`} className="game-card-link">
                 <img
-                    src={game.img}
+                    src={game.img || "https://placehold.co/300x330?text=No+Image"}
                     alt={game.name}
                     className="card-img-top game-card-img"
                 />
