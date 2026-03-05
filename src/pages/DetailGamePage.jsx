@@ -7,13 +7,14 @@ export default function DetailGamePage() {
     const { id } = useParams()
     const [game, setGame] = useState(null)
 
-    function fetchGame() {
-        axios.get(import.meta.env.VITE_API_URL + "/games/" + id)
-            .then((res) => setGame(res.data))
-            .catch(error => console.log(error))
-    }
+
 
     useEffect(() => {
+        function fetchGame() {
+            axios.get(import.meta.env.VITE_API_URL + "/games/" + id)
+                .then((res) => setGame(res.data))
+                .catch(error => console.log(error))
+        }
         fetchGame()
     }, [id])
 
